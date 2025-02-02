@@ -2,6 +2,10 @@
 *.o
 *.exe
 *.log
+*.sublime-project
+*.sublime-workspace
 .DS_Store
+.vscode/
+.idea/
 .vscode/
 .idea/
