@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pacifico&family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+    height: 100vh;
+    width: auto;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 40px;
+}
+
+
+.logininformation {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+}
+
+
+.logininformation p {
+    font-family: 'dm sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+
+}
+
+
+.logininformation p::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -28px;
+    width: 115px;
+    height: 2px;
+    background-color: black;
+}
+
+
+/* Forms Informations */
+
+
+.form_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding-bottom: 80px;
+    border-radius: 12px;
+}
+
+
+.form_container h2 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+
+.input_box {
+    position: relative;
+    margin-bottom: 20px;
+    width: 12.5rem;
+    height: 40px;
+}
+
+
+.input_box input {
+    height: 100%;
+    width: 100%;
+    border: 1.5px solid #aaaaaa;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+
+.input_box input:focus {
+    border-color: #441D97;
+}
+
+
+.input_field {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.form_container a {
+    color: #441D97;
+    font-size: 12px;
+}
+
+
+.form_container a:hover {
+    text-decoration: underline;
+}
+
+
+.forgot_agency {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    white-space: nowrap;
+    position: relative;
+    bottom: 2.8px;
+    left: 7.5px;
+    font-size: 12px;
+}
+
+
+.checkbox input {
+    accent-color: #441D97;
+}
+
+
+.checkbox label {
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+}
+
+
+.button {
+    position: relative;
+    left: 4px;
+    top: 8px;
+    background: #D9D9D9;
+    margin-top: 18px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 18px;
+    border-style: none;
+    color: #441D97;
+    font-weight: bold;
+}
+
+
+.button:hover {
+    cursor: pointer;
+    background: #441D97;
+    color: white;
+}
+
+
+.input_box i {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    font-size: 20px;
+    color: #505050;
+}
+
+
+/* Frequent Questions */
+
+
+.frequentquestions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    gap: 40px;
+}
+
+
+.accordion {
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.accordion-body {
+    color: #444;
+    font-size: 14px;
+    padding: 5px 0px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .2s;
+}
+
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 8;
+}
+
+
+.arrow {
+    transition: transform .2s linear;
+    height: 15px;
+    width: 29px;
+}
+
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+}
