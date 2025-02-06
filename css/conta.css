@@ -1,0 +1,301 @@
+:root{
+    --azul-principal: #0000AD;
+    --cor-principal-fonte: #000000;
+    --cor-secundaria-fonte: #FFFFFF;
+    --fonte-principal: 'DM Sans', sans-serif;
+    --fonte-subtitulo: 18px;
+    --fonte-titulo: 24px;
+    --fonte-descricao: 12px;
+    --fonte-opcoes: 13px;
+    --cor-hover-elementos: #1919A5;
+}
+
+@media (max-width: 667px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    button{
+        border: none;
+        background: none;
+    }
+
+    body{
+        max-width: 85%;
+        margin: 0 auto;
+        font-family: var(--fonte-principal);
+        padding-bottom: 80px;
+        
+    }
+
+
+
+    /*Cabeçalho*/
+
+    .acesso__usuario{
+        width: 100%;
+        display: flex;
+        margin: 2rem 0;
+        justify-content: space-between;
+    }
+
+    .perfil__usuario{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .identificador{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .icone{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .opcoes__usuario{
+        display: flex;
+        gap: 1rem;
+    }
+
+
+
+    /* Section Saldo */
+
+    .saldo__conta{
+        background-color: var(--azul-principal);
+        padding: 2rem 1.5rem;
+        border-radius: 10px;
+        color: var(--cor-secundaria-fonte);
+        height: 217px;
+        margin-bottom: 3rem;
+    }
+
+    .opcao__extrato{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: .5rem;
+       font-size: var(--fonte-descricao); 
+       margin-bottom: 3rem;
+       
+    }
+
+    .seta__extrato{
+        width: 3rem;
+    }
+
+    .titulo__saldo{
+        margin-bottom: 2rem;
+    }
+
+    .titulo__saldo h2{
+        font-size: 20px;
+    }
+
+    .saldo__visibilidade{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: var(--fonte-titulo);
+        margin-bottom: 2rem;
+    }
+
+
+    .opcao__visibilidade img{
+        width: 2rem;
+    }
+
+    .rendimento__saldo p{
+        font-size: var(--fonte-descricao);
+    }
+
+
+
+    /* Section Pagamentos */
+
+    .pagamentos__opcoes{
+        margin-bottom: 3.5rem;
+    }
+
+    
+    .titulo__pagamento{
+        font-weight: bold;
+        font-size: var(--fonte-descricao);
+    }
+
+    .botoes__pagamentos{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .pagamento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.2);
+        width: 160px;
+        height: 90px;
+        border-radius: 8px;
+        transition: 0.2s ease;
+        color: var(--cor-principal-fonte);
+    }
+
+    .imagem__pagamento{
+        width: 40px;
+        height: 40px;
+        margin: .5rem 0;
+    }
+
+    .titulo__secoes{
+        font-weight: bold;
+        font-size: var(--fonte-descricao);
+        margin-bottom: 2rem;
+    }
+
+    
+
+
+    /* Section Soluções */
+
+    .solucoes__banco{
+        margin-bottom: 3.5rem;
+    }
+
+    .botao__solucao{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.2);
+        color: var(--cor-principal-fonte);
+        width: 325px;
+        height: 66px;
+    }
+
+    .imagem__solucao{
+        width: 40px;
+        height: 40px;
+    }
+
+    .recarga__celular{
+        width: 28px;
+    }
+
+    .titulo__solucao{
+        font-size: var(--fonte-opcoes);
+        font-weight: bold;
+    }
+
+
+    /* Section Investimentos */
+
+    .investimentos__acesso{
+        margin-bottom: 4rem;
+        width: 100%;
+    }
+
+
+    .opcoes__investimentos{
+        width: 250px;
+        height: 319px;
+        border: 0.5px solid var(--cor-principal-fonte);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem__investimento{
+        text-align: center;
+    }
+
+    .acesso__conteudo{
+        text-align: right;
+        margin: 1rem 0 0 4rem;
+    }
+
+    .acesso__conteudo p{
+        font-size: var(--fonte-descricao);
+        font-weight: 600;
+    }
+
+    .titulo__investimento{
+        font-size: var(--fonte-subtitulo);
+        font-weight: bold;
+        margin: 2rem 0rem;
+    }
+
+    .descricao__investimento{
+        font-size: var(--fonte-descricao);
+        padding-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    /* Seção Atendimento */
+
+    .atendimento__acesso{
+        margin-bottom: 3.5rem;
+        text-align: center;
+    }
+
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .informacoes h2 {
+        font-size: var(--fonte-subtitulo);
+    }
+
+    .informacoes p{
+        font-size: var(--fonte-subtitulo);
+        font-style: italic;
+    }
+    
+
+    /* Rodapé */
+
+    .menu__acesso{
+        width: 95%;
+        height: 60px;
+        align-items: center;
+        background-color: var(--azul-principal);
+        border-radius: 20px;
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        position: fixed;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .opcao__menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .titulo__menu{
+        color: var(--cor-secundaria-fonte);
+        font-size: 13px;
+    }
+
+    .imagem__menu{
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UnionBank - Login</title>
     <link rel="icon" href="../unionbank/css/images/logobanco.png" type="image/png">
-    <link rel="stylesheet" href="../unionbank/css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -15,8 +15,8 @@
 
 
     <header>
-        <img src="../unionbank/css/images/logounion.png" alt="Logo Union">
-        <img src="../unionbank/css/images/logobanco.png" alt="Logo Banco">
+        <img src="./css/images/logounion.png" alt="Logo Union">
+        <img src="./css/images/logobanco.png" alt="Logo Banco">
     </header>
 
 
@@ -39,7 +39,7 @@
                 <div class="form login_form">
                     <form action="#">
                         <div class="input_box">
-                            <input type="text" placeholder="Digite o seu nome" required>
+                            <input id="nome" type="text" placeholder="Digite o seu nome" required>
                             <i class='bx bx-user'></i>
                         </div>
                         <div class="input_box">
@@ -55,8 +55,9 @@
                                 <label for="check">Lembrar informações</label>
                             </span>
                         </div>
-                        <button class="button">Entrar</button>
-                        <button class="button">Cadastrar</button>
+                        <button class="button" id="botaoEntrar" >Entrar</button>
+                        <button class="button" id="botaoCadastrar">Cadastrar</button>
+                        <!-- <button class="button" id="botaoCadastrar">Cadastrar</button> -->
                     </form>
                 </div>
             </div>
@@ -70,7 +71,7 @@
             <div class="accordion">
                 <button class="accordion-header">
                     <span>Como posso alterar minhas informações?</span>
-                    <img class="arrow" src="../unionbank/css/images/downbutton.png" alt="">
+                    <img class="arrow" src="./css/images/downbutton.png" alt="">
                 </button>
                 <div class="accordion-body">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam repellendus repudiandae.
@@ -120,6 +121,6 @@
             </div>
         </section>
     </main>
-    <script src="../unionbank/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

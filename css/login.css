@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pacifico&family=Quicksand:wght@300..700&display=swap');
+
 
 
 body {
     height: 100vh;
     width: auto;
+    font-family: 'DM Sans', sans-serif;;
 }
 
 
@@ -28,7 +29,6 @@ header {
 
 
 .logininformation p {
-    font-family: 'dm sans', sans-serif;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -89,7 +89,7 @@ header {
 
 
 .input_box input:focus {
-    border-color: #441D97;
+    border-color: #1919A5;
 }
 
 
@@ -103,7 +103,7 @@ header {
 
 
 .form_container a {
-    color: #441D97;
+    color: #1919A5;
     font-size: 12px;
 }
 
@@ -133,7 +133,7 @@ header {
 
 
 .checkbox input {
-    accent-color: #441D97;
+    accent-color: #1919A5;
 }
 
 
@@ -155,14 +155,14 @@ header {
     padding: 10px 0;
     border-radius: 18px;
     border-style: none;
-    color: #441D97;
+    color: #1919A5;
     font-weight: bold;
 }
 
 
 .button:hover {
     cursor: pointer;
-    background: #441D97;
+    background: #1919A5;
     color: white;
 }
 
